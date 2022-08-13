@@ -5,11 +5,8 @@ from numpy import char
 
 print("Welcome to the quiz")
 playing = input("Do you want to play the game? (Y/N): ").lower() 
-option1='y'
-option2='yes'
-if playing != 'y':
+if not(playing=='y' or playing=='yes'):
     quit()
-
 
 score=0    #The actual Program Starts Here
 total=4
