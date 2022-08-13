@@ -39,7 +39,8 @@ if ans.upper() == 'B':
 else:
     print("\nYour answer is Incorrect\n")
 print("------------------------------------\n")
-print(f"Your score is: {score} out of {total} questions\n")  #Printing the Score
+print(f"Your score is: {score} out of {total} questions.\n")  #Printing the Score
+print("Your Percentage is",((score/total)*100),"%.\n")          #Printing the Percentage
 if score==0:
     print("You Suck...")
 elif score==1:
