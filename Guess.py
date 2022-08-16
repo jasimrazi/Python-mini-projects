@@ -1,7 +1,7 @@
 from operator import truediv
 import random
 
-range=input("Please type a range: ")
+range=input("Please type a range: ")       #Checking the range condiotions
 if range.isdigit():
     range=int(range)
     if range<=0:
@@ -11,11 +11,10 @@ else:
     print("Please a type a 'number'")
     input()
 
-random_number=random.randint(0,range)
-# random_number=int(random_number)
-total = 0
+random_number=random.randint(0,range)      #Sets the range
+total = 0                                  #Initialise the variable for no. of guesses
 
-while True:
+while True:                                #Giving hints using while loop
     guess=input("Guess the number: ")
     if guess.isdigit():
         guess=int(guess)
@@ -35,7 +34,7 @@ while True:
         print("Your guess is above the number")
         
 
-# print("\nYou took",total,"guesses in total.")
+
 
 
 
