@@ -39,6 +39,7 @@ while True:
 print(f"You've won {user_wins} times.")
 print(f"Computer won {computer_wins} times.")
 
+input()
 
 
 
