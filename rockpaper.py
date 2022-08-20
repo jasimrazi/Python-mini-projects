@@ -21,19 +21,22 @@ while True:
 
     #rock=0 paper=1 scissor=2
     if user_input=="rock" and computer_input=="scissor":
-        print("You've won")
         user_wins+=1
+        print("You've won \t","[ C =",computer_wins,"/","U =",user_wins,"]\n")
     elif user_input=="paper" and computer_input=="rock":
-        print("You've won")
         user_wins+=1
+        print("You've won \t","[ C =",computer_wins,"/","U =",user_wins,"]\n")
+        
     elif user_input=="scissor" and computer_input=="paper":
-        print("You've won")
+        user_wins+=1
+        print("You've won \t","[ C =",computer_wins,"/","U =",user_wins,"]\n")
         user_wins+=1
     elif user_input == computer_input:
-        print("Its a draw")
+        print("Its a draw \t","[ C =",computer_wins,"/","U =",user_wins,"]\n")
     else:
-        print("You've lost")
         computer_wins+=1
+        print("You've lost \t","[ C =",computer_wins,"/","U =",user_wins,"]\n")
+        
 
 
 print(f"You've won {user_wins} times.")
