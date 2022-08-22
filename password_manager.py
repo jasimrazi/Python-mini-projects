@@ -1,3 +1,5 @@
+import os.path
+
 print ("Welcome to Password Manager\n")
 print ("Type Q to quit\n")
 
@@ -24,7 +26,10 @@ while True:
     answer = input("Do you want view or add a password (view/add): ").lower()
 
     if answer == "view":
-        view()
+        if os.path.isfile('passwords.txt'):
+            view()
+        else:
+            print ("You haven't created a file yet.")
 
     elif answer == "add":
         add()
