@@ -3,7 +3,7 @@ import string
 
 print("Welcome to Password Generator\n")
 
-length = int(input("Enter the lenth of the password: "))
+length = int(input("Enter the length of the password: "))
 
 letters = string.ascii_letters
 numbers = string.digits
