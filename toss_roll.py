@@ -18,7 +18,7 @@ while True:
         print("The coin landed on", r2)
         continue
 
-    elif (answer == "q"):
+    elif (answer == "q" or answer == "quit"):
         break
 
     else:
